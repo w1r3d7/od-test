@@ -1,0 +1,23 @@
+.text-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #EA0029;
+  outline: none;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+
+.text-button:hover,
+.text-button:focus {
+  color: #F53A31;
+}
+
+.text-button:active {
+  color: #EA0029;
+}

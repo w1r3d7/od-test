@@ -1,0 +1,53 @@
+.button {
+  width: 149px;
+  height: 40px;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #FFFFFF;
+  background: none;
+  font: inherit;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+}
+
+.button:hover:enabled,
+.button:focus:enabled {
+  background: #FFFFFF;
+  color: #000000;
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #BEC5CC;
+  border: none;
+}
+
+.button--fill {
+  background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+  box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
+  border: none;
+}
+
+.button--fill:hover:enabled,
+.button--fill:focus:enabled {
+  background: #EA0029;
+  color: #FFFFFF;
+}
+
+
+@media (min-width: 768px) {
+  .button {
+    width: 288px;
+    min-height: 56px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+

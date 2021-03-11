@@ -1,0 +1,28 @@
+.tag-button {
+  padding: 6px 12px;
+  background-color: #EEF0F2;
+  border: none;
+  border-radius: 50px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  outline: none;
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+
+.tag-button:hover {
+  background: #DFE3E6 none;
+}
+
+.tag-button:active {
+  background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+  color: #FFFFFF;
+}
+
+.tag-button--active {
+  background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+  color: #FFFFFF;
+}

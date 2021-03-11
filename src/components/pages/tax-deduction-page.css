@@ -1,0 +1,155 @@
+.tax-deduction {
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.tax-deduction__title {
+  margin: 16px 0 16px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.tax-deduction__description {
+  margin: 0 0 24px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.tax-deduction__form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tax-deduction__form-salary-input {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.tax-deduction__form-salary-input label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.tax-deduction__form-salary-input input {
+  padding-left: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #DFE3E6;
+  border-radius: 3px;
+  outline: none;
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.tax-deduction__form-salary-input input:hover {
+  border: 1px solid #000000;
+}
+
+.tax-deduction__form-salary-input input:focus {
+  border: 1px solid #DFE3E6;
+}
+
+.tax-deduction__form-salary-input input:disabled {
+  border: 1px solid #808080;
+}
+
+.tax-deduction__form-salary-input--error input,
+.tax-deduction__form-salary-input--error input:focus,
+.tax-deduction__form-salary-input--error input:hover {
+  border-color: #EA0029;
+}
+
+.tax-deduction__form-salary-span {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #EA0029;
+}
+
+.tax-deduction__calculate-button {
+  margin-bottom: 16px;
+}
+
+.tax-deduction__tags {
+  margin-bottom: 40px;
+}
+
+.tax-deduction__tags-title {
+  margin: 0 0 24px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.tax-deduction__form button[type="submit"] {
+  width: 100%;
+}
+
+
+.tax-deduction__tags-wrapper button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.tax-deduction__form-total {
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .tax-deduction {
+    padding: 32px;
+  }
+
+  .tax-deduction__title {
+    margin: 2px 0 14px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .tax-deduction__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .tax-deduction__tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .tax-deduction__tags-title {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .tax-deduction__form-total {
+    margin-bottom: 19px;
+  }
+
+  .tax-deduction__tags-wrapper button:not(:last-child) {
+    margin-right: 17px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .tax-deduction__description {
+    width: 90%;
+  }
+}
