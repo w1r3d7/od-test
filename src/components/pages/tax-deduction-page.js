@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 import CurrencyInput from 'react-currency-input-field';
 
 import './tax-deduction-page.css';
@@ -16,27 +16,27 @@ const TaxDeductionPage = ({onButtonClick}) => {
   const [salaryError, setSalaryError] = useState(null);
   const [totalShowed, setTotalShowed] = useState(false);
 
-  const form = useRef(null);
-
-  useDidMountEffect(() => {
+  const cleanErrors = () => {
     if (salaryError) {
       setSalaryError('');
     }
+  }
 
-    if (!salary) {
-      return setSalaryError(INPUT_EMPTY_MESSAGE);
-    }
-
+  useDidMountEffect(() => {
     if (salary < MIN_SALARY) {
       return setSalaryError(INPUT_MIN_PRICE_MESSAGE);
     }
-  }, [salary, salaryError])
+  }, [salary])
 
   const handleTagButtonClick = (name) => {
     setActiveTag(name)
   }
 
   const handleCalculateButtonClick = () => {
+    if (!salary) {
+      return setSalaryError(INPUT_EMPTY_MESSAGE);
+    }
+
     if (!salaryError) {
       setTotalShowed(true);
     }
@@ -50,6 +50,7 @@ const TaxDeductionPage = ({onButtonClick}) => {
   }
 
   const handleSalaryInputChange = (value) => {
+    cleanErrors();
     setTotalShowed(false);
     setSalary(value);
   }
