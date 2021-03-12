@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   border-radius: 6px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background: none;
   font: inherit;
   font-size: 12px;
@@ -18,28 +18,32 @@
 
 .button:hover:enabled,
 .button:focus:enabled {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #000000;
   outline: none;
 }
 
 .button:disabled {
-  background-color: #BEC5CC;
+  background-color: #bec5cc;
   border: none;
 }
 
 .button--fill {
-  background: linear-gradient(255.35deg, #DC3131 0.83%, rgba(255, 79, 79, 0) 108.93%), #FF5E56;
+  background: linear-gradient(
+      255.35deg,
+      #dc3131 0.83%,
+      rgba(255, 79, 79, 0) 108.93%
+    ),
+    #ff5e56;
   box-shadow: 0 0 24px rgba(234, 0, 41, 0.33);
   border: none;
 }
 
 .button--fill:hover:enabled,
 .button--fill:focus:enabled {
-  background: #EA0029;
-  color: #FFFFFF;
+  background: #ea0029;
+  color: #ffffff;
 }
-
 
 @media (min-width: 768px) {
   .button {
@@ -49,5 +53,3 @@
     line-height: 24px;
   }
 }
-
-

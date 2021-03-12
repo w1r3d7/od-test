@@ -46,7 +46,7 @@
   box-sizing: border-box;
   width: 100%;
   height: 40px;
-  border: 1px solid #DFE3E6;
+  border: 1px solid #dfe3e6;
   border-radius: 3px;
   outline: none;
   font: inherit;
@@ -60,7 +60,7 @@
 }
 
 .tax-deduction__form-salary-input input:focus {
-  border: 1px solid #DFE3E6;
+  border: 1px solid #dfe3e6;
 }
 
 .tax-deduction__form-salary-input input:disabled {
@@ -70,14 +70,14 @@
 .tax-deduction__form-salary-input--error input,
 .tax-deduction__form-salary-input--error input:focus,
 .tax-deduction__form-salary-input--error input:hover {
-  border-color: #EA0029;
+  border-color: #ea0029;
 }
 
 .tax-deduction__form-salary-span {
   font-size: 10px;
   line-height: 12px;
   font-weight: 400;
-  color: #EA0029;
+  color: #ea0029;
 }
 
 .tax-deduction__calculate-button {
@@ -100,7 +100,6 @@
   width: 100%;
 }
 
-
 .tax-deduction__tags-wrapper button:not(:last-child) {
   margin-right: 10px;
 }
@@ -109,7 +108,6 @@
   margin-bottom: 24px;
   width: 100%;
 }
-
 
 @media (min-width: 768px) {
   .tax-deduction {
@@ -145,7 +143,6 @@
   .tax-deduction__tags-wrapper button:not(:last-child) {
     margin-right: 17px;
   }
-
 }
 
 @media (min-width: 1440px) {

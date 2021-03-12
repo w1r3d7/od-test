@@ -1,3 +1,3 @@
-import Total from './total';
+import Total from "./total";
 
 export default Total;

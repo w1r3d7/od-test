@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import {FirstPage, TaxDeductionPage} from '../pages';
-import Modal from '../modal';
+import React, { useState } from "react";
+import { FirstPage, TaxDeductionPage } from "../pages";
+import Modal from "../modal";
 
 const App = () => {
   const [isInsideApp, setIsInsideApp] = useState(true);
@@ -10,18 +10,16 @@ const App = () => {
   };
 
   return (
-      <>
-        {isInsideApp ?
-            <FirstPage onButtonClick={handleTaxDeductionButtonClick} />
-        :
-            <Modal onButtonClick={handleTaxDeductionButtonClick}>
-              <TaxDeductionPage onButtonClick={handleTaxDeductionButtonClick} />
-            </Modal>
-        }
-      </>
+    <>
+      {isInsideApp ? (
+        <FirstPage onButtonClick={handleTaxDeductionButtonClick} />
+      ) : (
+        <Modal onButtonClick={handleTaxDeductionButtonClick}>
+          <TaxDeductionPage onButtonClick={handleTaxDeductionButtonClick} />
+        </Modal>
+      )}
+    </>
   );
-}
-
-
+};
 
 export default App;

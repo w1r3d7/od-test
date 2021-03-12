@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import './tag-button.css';
+import "./tag-button.css";
 
-const TagButton = ({text, active, additionClass, name, onButtonClick}) => {
-  let buttonClass = 'tag-button';
+const TagButton = ({ text, active, additionClass, name, onButtonClick }) => {
+  let buttonClass = "tag-button";
 
   if (active) {
-    buttonClass += ' tag-button--active';
+    buttonClass += " tag-button--active";
   }
 
   if (additionClass) {
@@ -14,14 +14,15 @@ const TagButton = ({text, active, additionClass, name, onButtonClick}) => {
   }
 
   return (
-      <button
-          onClick={() => onButtonClick(name)}
-          className={buttonClass}
-          name={name ? name : null}
-          type="button">
-        {text}
-      </button>
-  )
+    <button
+      onClick={() => onButtonClick(name)}
+      className={buttonClass}
+      name={name ? name : null}
+      type="button"
+    >
+      {text}
+    </button>
+  );
 };
 
 export default TagButton;

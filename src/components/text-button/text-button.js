@@ -1,22 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import './text-button.css';
+import "./text-button.css";
 
-const TextButton = ({text, onButtonClick, additionClass}) => {
-  let buttonClass = 'text-button';
+const TextButton = ({ text, onButtonClick, additionClass }) => {
+  let buttonClass = "text-button";
 
   if (additionClass) {
     buttonClass += ` ${additionClass}`;
   }
   return (
-      <button
-          className={buttonClass}
-          type="button"
-          onClick={onButtonClick}
-      >{text}</button>
+    <button className={buttonClass} type="button" onClick={onButtonClick}>
+      {text}
+    </button>
   );
-}
-
-
+};
 
 export default TextButton;
